@@ -3,13 +3,16 @@
  margin: 0;
  padding: 0;
 }
+/* 图片 */
 img{
  height:200px;
 }
+/* 标题栏 */
 .head{
  background-color:yellow;
  font-size:50px;
 }
+/* 标题栏全部图片链接 */
 .head > #body-img-a{
  background-color:green;
 }
