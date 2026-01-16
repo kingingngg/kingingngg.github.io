@@ -11,7 +11,7 @@ img{
 /* 标题栏 */
 .head{
  background-color:yellow;
- font-size:50px;
+ font-size:30px;
 }
 /* 标题栏全部图片链接 */
 .head > #body-img-a{
