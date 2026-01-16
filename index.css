@@ -17,3 +17,7 @@ img{
 .head > #body-img-a{
  background-color:green;
 }
+/* 标题栏空网站链接 */
+.head > #nall{
+ background-color:blue;
+}
