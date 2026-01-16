@@ -1,1 +1,16 @@
-
+ /* 全局样式重置，消除默认边距 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        img{
+            height:200px;
+        }
+        .head{
+            background-color:yellow;
+            font-size:50px;
+        }
+        .head > #body-img-a{
+            background-color:green;
+        }
