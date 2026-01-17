@@ -21,7 +21,7 @@ img{
 .head > #nall{
  background-color:red;
 }
-/* 标题栏语文word网站 */
-.head > #chinese-class{
+/* 语文word网站 */
+#chinese-class{
  background-color:e3f2fd;/* 浅蓝色 */
 }
