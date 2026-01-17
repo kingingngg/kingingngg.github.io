@@ -11,9 +11,9 @@
 .nall-web{
  background-color:red;
 }
-/* 语文word网站 */
+/* 语文word 和 索引 网站 */
 .chinese-class , .class-web-a{
- background-color:0xe3f2fd;/* 浅蓝色 */
+ background-color:#e3f2fd;/* 浅蓝色 */
 }
 /* 返回标签 */
 .go-up-a{
