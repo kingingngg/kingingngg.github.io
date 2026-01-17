@@ -1,1 +1,18 @@
+/* 标题栏 */
+.head{
+ background-color:yellow;
+ font-size:30px;
+}
+/* 标题栏全部图片链接 */
+.head > #body-img-a{
+ background-color:green;
+}
+/* 标题栏空网站链接 */
+.head > #nall{
+ background-color:red;
+}
+/* 语文word网站 */
+.chinese-class{
+ background-color:e3f2fd;/* 浅蓝色 */
+}
 
