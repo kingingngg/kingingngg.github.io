@@ -1,37 +1,117 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-690K0XSLSS"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-690K0XSLSS');
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Pages Web</title>
-    <link rel="stylesheet" href="/css/background.css">
-    <link rel="stylesheet" href="/css/text.css">
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/head.css">
-    <style>
-        /* nall */
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About King</title>
+
+  <!-- Google tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-690K0XSLSS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-690K0XSLSS');
+  </script>
+  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-KCGZSB7P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet" href="css/fonts.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <div class="head">
-        <span class="body-img-a">
-            <a href="/web/body_img.html">图片</a>
-        </span>
-        <span class="nall-web">
-            <a href="/web/hello.html">空位</a>
-        </span>
-        <span class="class-web-a">
-            <a href="/web/web_index.html">功能索引</a>
-        </span>
+
+<!-- 汉堡按钮（仅窄屏可见，打开后隐藏） -->
+<button class="hamburger" id="hamburger" type="button"
+        aria-label="打开导航" aria-expanded="false" aria-controls="sidebar">
+  <span class="material-symbols-outlined">menu</span>
+</button>
+
+<!-- 遮罩（点空白关闭） -->
+<div class="scrim" id="scrim"></div>
+
+<!-- 侧边栏 -->
+<aside class="sidebar" id="sidebar" aria-label="主导航">
+  <ul class="nav-list">
+    <li>
+      <button class="nav-item is-active" data-target="home" type="button">
+        <span class="nav-icon"><span class="material-symbols-outlined">home</span></span>
+        <span class="side-label">Home</span>
+      </button>
+    </li>
+    <li>
+      <button class="nav-item" data-target="article" type="button">
+        <span class="nav-icon"><span class="material-symbols-outlined">article</span></span>
+        <span class="side-label">Article</span>
+      </button>
+    </li>
+    <li>
+      <button class="nav-item" data-target="files" type="button">
+        <span class="nav-icon"><span class="material-symbols-outlined">files</span></span>
+        <span class="side-label">Files</span>
+      </button>
+    </li>
+    <li>
+      <button class="nav-item" data-target="more" type="button">
+        <span class="nav-icon"><span class="material-symbols-outlined">more</span></span>
+        <span class="side-label">More</span>
+      </button>
+    </li>
+  </ul>
+</aside>
+
+<!-- 主内容 -->
+<main class="main">
+  <!-- 首页：头像 + 名字 -->
+  <section id="page-home" class="page-section">
+    <div class="hero">
+      <div class="hero-anim" id="hero-anim" aria-hidden="true"></div>
+      <div class="avatar" id="avatar">
+        <div class="avatar-lottie" id="avatar-lottie"></div>
+        <img class="avatar-img" id="avatar-img" src="files/unnamed.jpg"
+             alt="头像" width="100" height="100">
+      </div>
     </div>
+
+    <div class="who">
+      <h1 class="name">king</h1>
+    </div>
+  </section>
+
+  <!-- 文章页内容 -->
+  <section id="page-article" class="page-section" hidden>
+    <h1>文章页</h1>
+    <p>这里展示文章内容</p>
+  </section>
+
+  <!-- 文件页内容 -->
+  <section id="page-files" class="page-section" hidden>
+    <h1>文件页</h1>
+    <p>这里展示文件列表</p>
+  </section>
+
+  <!-- 更多页内容 -->
+  <section id="page-more" class="page-section" hidden>
+    <h1>更多</h1>
+    <p>这里展示更多内容</p>
+  </section>
+</main>
+
+<!-- 都用 defer：即使 lottie CDN 很慢或打不开，也不会卡住导航脚本 -->
+<script src="js/app.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/lottie-web@5.12.2/build/player/lottie.min.js" defer></script>
+<script src="js/hero.js" defer></script>
+
 </body>
 </html>
